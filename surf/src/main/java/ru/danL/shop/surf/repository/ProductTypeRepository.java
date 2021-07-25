@@ -1,4 +1,9 @@
 package ru.danL.shop.surf.repository;
 
-public interface ProductTypeRepository {
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+import ru.danL.shop.surf.entity.ProductType;
+
+@Repository
+public interface ProductTypeRepository extends CrudRepository<ProductType, Long> {
 }
